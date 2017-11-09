@@ -38,8 +38,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### Posts
 {% for post in site.posts %}
-[###{ post.title }]({ post.url })
-
+###{ post.title }
 <small><strong>{{ post.date | date: "%B %e, %Y" }}</strong> . {{ post.category }}</small>
-
+[more...]({ post.url })
 {% endfor %}
