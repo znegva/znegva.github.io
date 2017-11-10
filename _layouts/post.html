@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% if page.lang %}
+<div class="post" lang="{{page.lang}}">
+{% else %}
+<div class="post">
+{% endif %}
+	<div class="post-head">
+		<h1>
+			{{ page.title }}
+		</h1>
+		<span class="date">{{ page.date | date_to_string }}</span>
+		<span class="tags">
+			&nbsp;
+			{% for tag in page.tags %}
+			  {% capture tag_name %}{{ tag }}{% endcapture %}
+			  <!--a class="no-underline" href="/tag/{{ tag_name }}">
+				  <code class="highligher-rouge">
+					  <nobr>{{ tag_name }}</nobr>
+				  </code>&nbsp;
+			  </a-->
+				<nobr>#{{ tag_name }}</nobr>
+				&nbsp;
+			{% endfor %}
+		</span>
+	</div>
+  {{ content }}
+</div>
