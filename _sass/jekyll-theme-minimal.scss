@@ -215,6 +215,16 @@ footer {
   }
 }
 
+.post-head{
+    margin-bottom: 25px;
+    a:hover{
+        text-decoration: none;
+    }
+    h1{
+        margin-bottom: 0px;
+    }
+}
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
