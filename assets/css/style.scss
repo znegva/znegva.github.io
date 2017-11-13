@@ -1,15 +1,4 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-.post-head{
-	h1{
-		margin-bottom: 0px;
-	}
-	.date{
-	}
-	.tags{
-	}
-	margin-bottom: 25px;
-}
+@import "jekyll-theme-minimal";
