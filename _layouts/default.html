@@ -24,8 +24,15 @@
 
       </section>
       <footer>
-        <p>maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        <p><small>hosted on GitHub Pages</small></p>
+          <ul>
+             {% for item in site.data.nav.items %}
+                <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+             {% endfor %}
+          </ul>
+          <small>
+              <p>maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+              <p>hosted on GitHub Pages</p>
+          </small>
       </footer>
     </div>
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
