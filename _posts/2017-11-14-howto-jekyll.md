@@ -13,7 +13,7 @@ Um die erstellten Seiten vor dem commiten kurz prüfen zu können bietet es sich
 Jekyll lokal zu installieren.  
 Grundlage ist in jedem Fall Ruby zu installieren, da Jekyll darauf aufbaut.
 
-### macOS
+## macOS
 
 Unter macOS bekommt man mit `brew` eine relativ aktuelle Ruby Version
 ``` zsh
@@ -34,7 +34,7 @@ des Projektes) automatisch zu installieren/nutzen.
 
 
 
-### Debian 8
+## Debian 8
 
 Auch unter Debian nutzen wir wieder den Hauseigenen Paketmanager um zunächst
 die Ruby-Pakete zu installieren.  
@@ -53,7 +53,7 @@ sehr alten Version!
 ~ % sudo gem install bundler jekyll
 ```
 
-### Testlauf
+## Testlauf
 
 Wenn alles installiert ist kann ein kurzer Testlauf gestartet werden.
 ``` zsh
