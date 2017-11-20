@@ -10,18 +10,8 @@ layout: default
 			</h1>
 		</a>
 		<span class="date">{{ post.date | date_to_string }}</span>
-		<span class="tags">
-			&nbsp;
-			{% for tag in post.tags %}
-			  {% capture tag_name %}{{ tag }}{% endcapture %}
-			  <!--a class="no-underline" href="/tag/{{ tag_name }}">
-				  <code class="highligher-rouge">
-					  <nobr>{{ tag_name }}</nobr>
-				  </code>&nbsp;
-			  </a-->
-				<nobr>#{{ tag_name }}</nobr>
-				&nbsp;
-			{% endfor %}
-		</span>
+		{% if post.author %}
+		<span class="author">, {{ post.author }}</span>
+		{% endif %}
 	</div>
 {% endfor %}
