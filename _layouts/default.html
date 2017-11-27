@@ -15,8 +15,19 @@
   <body>
     <div class="wrapper">
       <header>
-        <a href="{{ site.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        <a href="{{ site.url }}">
+            <h1>
+                {{ site.title | default: site.github.repository_name }}
+            </h1>
+        </a>
+        <span class="slogan">
+            {{ site.description | default: site.github.project_tagline }}
+        </span>
+        <ul class="nav">
+            {% for item in site.data.nav.items %}
+              <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+            {% endfor %}
+        </ul>
       </header>
       <section>
 
@@ -24,14 +35,9 @@
 
       </section>
       <footer>
-          <ul>
-             {% for item in site.data.nav.items %}
-                <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-             {% endfor %}
-          </ul>
-          <small>
-              <p>maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-              <p>hosted on GitHub Pages</p>
+          <small class="right">
+              maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
+              | hosted on GitHub Pages</p>
           </small>
       </footer>
     </div>
