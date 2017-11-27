@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Akkutausch Motorola RAZR i
+lang: de_DE
 tags: DIY, Hardware
 ---
 

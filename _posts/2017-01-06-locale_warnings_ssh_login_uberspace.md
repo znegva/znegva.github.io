@@ -1,6 +1,7 @@
 ---
 layout: post
 title: locale Warnungen nach ssh-Login verhindern
+lang: de_DE
 tags: uberspace, macOS, ssh
 ---
 

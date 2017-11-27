@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Ein lokal vorhandenes git-Repository remote verfügbar machen
+lang: de_DE
 tags: git
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: SanDisk Connect zum laufen bringen
+lang: de_DE
 ---
 
 In Vorbereitung auf den diesjährigen Urlaub habe ich mich endlich mal   

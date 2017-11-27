@@ -1,6 +1,7 @@
 ---
 layout: post
-title:
+title: Sound Output Device unter Debian festlegen
+lang: de_DE
 tags: Debian
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Apache und PHP in macOS einrichten
+lang: de_DE
 tags: macOS, PHP, Apache
 ---
 

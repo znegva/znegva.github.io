@@ -1,6 +1,7 @@
 ---
 layout: post
 title: mkv auf Samsung smart TV abspielen
+lang: de_DE
 tags: Hardware, aaargh
 ---
 

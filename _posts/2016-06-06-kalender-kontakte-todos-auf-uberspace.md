@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Kalender, Kontakte und ToDos lokal und auf dem Android Gerät, ohne Google'
+lang: de_DE
 tags: uberspace
 ---
 

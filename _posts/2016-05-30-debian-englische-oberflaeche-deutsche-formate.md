@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Debian: englische Oberfläche, deutsche Formate'
+lang: de_DE
 tags: Debian
 ---
 

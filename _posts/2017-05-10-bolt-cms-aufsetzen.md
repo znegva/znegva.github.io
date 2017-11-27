@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bolt CMS aufsetzen
+lang: de_DE
 tags: BoltCMS
 ---
 

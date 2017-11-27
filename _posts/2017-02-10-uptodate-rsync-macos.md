@@ -1,6 +1,7 @@
 ---
 layout: post
 title: aktuelle rsync Version auf macOS
+lang: de_DE
 tags: aargh, brew, macOS, rsync
 ---
 

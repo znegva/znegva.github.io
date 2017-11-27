@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'automatisches Backup von BackInTime unter Debian wieder richten'
+lang: de_DE
 tags: Debian, Backups
 ---
 

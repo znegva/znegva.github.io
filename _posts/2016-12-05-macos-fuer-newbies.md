@@ -1,6 +1,7 @@
 ---
 layout: post
 title: macOS einrichten für Umsteiger
+lang: de_DE
 tags: macOS, aaargh
 ---
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: node und npm unter macOS einrichten
+lang: de_DE
 tags: macOS, node
 ---
 

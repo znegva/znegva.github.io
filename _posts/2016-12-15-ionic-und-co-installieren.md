@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ionic, XCode und Android SDK sowie Emulatoren unter macOS einrichten
+lang: de_DE
 tags: macOs, ionic, Android, iOS
 ---
 
