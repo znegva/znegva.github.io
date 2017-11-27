@@ -2,16 +2,21 @@
 layout: default
 ---
 
-{% for post in site.posts %}
-	<div class="post-head">
-		<a href="{{ post.url }}">
-			<h1>
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+{% for year in postsByYear %}
+	<h1>
+		{{ year.name }}
+	</h1>
+    <ul class="postlist">
+    {% for post in year.items %}
+        <li>
+			<a href="{{ post.url }}">
 				{{ post.title }}
-			</h1>
-		</a>
-		<span class="date">{{ post.date | date_to_string }}</span>
-		{% if post.author %}
-		<span class="author">, {{ post.author }}</span>
-		{% endif %}
-	</div>
+			</a>
+			<span class="date">
+				{{ post.date | date: "%d. %b" }}
+			</span>
+		</li>
+    {% endfor %}
+    </ul>
 {% endfor %}

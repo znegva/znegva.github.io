@@ -3,7 +3,7 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 "Open Sans","Liberation Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 1rem "Open Sans","Liberation Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
   font-weight:400;
 }
@@ -145,6 +145,21 @@ footer {
     }
     h1{
         margin-bottom: 0px;
+    }
+}
+
+ul.postlist{
+    list-style-type: none;
+    padding: 0;
+    a{
+        display: inline-block;
+        max-width: 70%;
+    }
+    li{
+        padding: 0.7rem 0;
+        .date{
+            float: right;
+        }
     }
 }
 
