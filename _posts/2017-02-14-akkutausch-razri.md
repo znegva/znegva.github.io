@@ -48,11 +48,15 @@ Das Flachkabel des Displays senkrecht nach oben abziehen, hier kann wieder der S
 
 Jetzt haben wir weitere 5 Schrauben freigelegt die die Platine an der Rückabdeckung halten, auch die entfernen.
 
-![](/assets/razri-20170214-232200482.jpg)Man sieht außerdem im Bereich unten Links ein Flachkabel von unter der Platine her, das ist die Verbindung zum Akku, diese muss gelöst werden.
+![](/assets/razri-20170214-232200482.jpg)
+
+Man sieht außerdem im Bereich unten Links ein Flachkabel von unter der Platine her, das ist die Verbindung zum Akku, diese muss gelöst werden.
 
 Im oberen Bereich muss noch das Kameramodul entfernt werden, sobald das Flachkabel gelöst ist kann man das Modul einfach herausnehmen.
 
-![](/assets/razri-20170214-232843436.jpg)Jetzt die Platine an den Stellen wo sie mit der Rückwand verklemmt ist lösen und nach oben abheben und man sieht den Akku. Dieser ist über seine ganze Fläche mit einem ziemlich starkem Klebeband an der (eher schwachen) Rückwand verklebt - hier braucht es viel Geduld, vorsichtige Finger und vielleicht einen etwas breiteren Hebel (z.B. Kreditkarte) um ihn zu lösen ohne die Rückwand allzu sehr zu verbiegen.
+![](/assets/razri-20170214-232843436.jpg)
+
+Jetzt die Platine an den Stellen wo sie mit der Rückwand verklemmt ist lösen und nach oben abheben und man sieht den Akku. Dieser ist über seine ganze Fläche mit einem ziemlich starkem Klebeband an der (eher schwachen) Rückwand verklebt - hier braucht es viel Geduld, vorsichtige Finger und vielleicht einen etwas breiteren Hebel (z.B. Kreditkarte) um ihn zu lösen ohne die Rückwand allzu sehr zu verbiegen.
 
 ![](/assets/razri-20170214-233551265.jpg)
 
