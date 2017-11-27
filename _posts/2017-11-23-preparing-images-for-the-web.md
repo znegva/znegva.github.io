@@ -25,7 +25,7 @@ Tool of choice is `convert` from the [ImageMagick](http://www.imagemagick.org/sc
 
 Make sure to use `auto-orient` especially if you took your photos with an iPhone!
 
-__Attention:__ this overwrite your original images, so make sure you are working on copies!
+__Attention:__ this overwrites your original images, so make sure you are working on copies!
 
 ### macOS
 
