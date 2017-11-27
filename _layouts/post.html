@@ -24,12 +24,10 @@ layout: default
 	  Tags:&nbsp;
 	  {% for tag in page.tags %}
 		{% capture tag_name %}{{ tag }}{% endcapture %}
-		<!--a class="no-underline" href="/tag/{{ tag_name }}">
-			<code class="highligher-rouge">
-				<nobr>{{ tag_name }}</nobr>
-			</code>&nbsp;
-		</a-->
-		  <nobr>{{ tag_name }}</nobr>
+		<a class="no-underline" href="/tags/#{{ tag_name }}">
+			#{{ tag_name }}
+		</a>
+		{% unless forloop.last %},&nbsp;{% endunless %}
 	  {% endfor %}
   </span>
   {% endif %}

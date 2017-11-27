@@ -2,7 +2,7 @@
 layout: post
 title: mkv auf Samsung smart TV abspielen
 lang: de_DE
-tags: Hardware, aaargh
+tags: Hardware aaargh
 ---
 
 Manche Samsung smart TVs sind offenbar nicht ganz so smart wenn es um Videoinhalte im [MKV Container](https://de.wikipedia.org/wiki/Matroska) geht - sie weigern sich einfach es abzuspielen.

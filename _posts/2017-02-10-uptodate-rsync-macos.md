@@ -2,7 +2,7 @@
 layout: post
 title: aktuelle rsync Version auf macOS
 lang: de_DE
-tags: aargh, brew, macOS, rsync
+tags: aaargh brew macOS rsync
 ---
 
 macOS Sierra kommt leider mit einer **sehr** alten Version von rsync:

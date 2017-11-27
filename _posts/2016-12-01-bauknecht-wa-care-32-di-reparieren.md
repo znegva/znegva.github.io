@@ -2,7 +2,7 @@
 layout: post
 title: Bauknecht WA Care 32 Di reparieren
 lang: de_DE
-tags: DIY, Hardware
+tags: DIY Hardware
 ---
 
 Unsere Waschmaschine hat den Geist aufgegeben :(   

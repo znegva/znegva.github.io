@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Preparing images for the web
-tags: snippets, images
+tags: snippets
 ---
 
 Preparing images from your camera or smartphone for using them in a weblog

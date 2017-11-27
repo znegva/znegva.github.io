@@ -2,7 +2,7 @@
 layout: post
 title: macOS einrichten für Umsteiger
 lang: de_DE
-tags: macOS, aaargh
+tags: macOS aaargh
 ---
 
 Als neues Mitglied in der Apfel-Familie hier ein paar Eindrücke und durchgeführte Schritte.

@@ -2,7 +2,7 @@
 layout: post
 title: mail für lokale Nachrichten einrichten nachdem man den hostnamen geändert hat
 lang: de_DE
-tags: Debian, dpkg, mail
+tags: Debian
 ---
 
 ## Situation

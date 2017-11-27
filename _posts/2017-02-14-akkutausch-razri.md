@@ -2,7 +2,7 @@
 layout: post
 title: Akkutausch Motorola RAZR i
 lang: de_DE
-tags: DIY, Hardware
+tags: DIY Hardware
 ---
 
 Mein liebgewonnenes Motorola RAZR i hatte nach langem zuverlässigem Einsatz plötzlich Aussetzer beim Akku, der angezeigte Akkustand schwankte innerhalb von Sekunden wild umher, es schaltete sich sporadisch aus.

@@ -2,7 +2,7 @@
 layout: post
 title: locale Warnungen nach ssh-Login verhindern
 lang: de_DE
-tags: uberspace, macOS, ssh
+tags: uberspace macOS ssh
 ---
 
 Beim SSH-Login auf dem uberspace versuchen die macOS Terminal App als auch iTerm2 ihre locale-Einstellungen mitzusenden. Leider versteht der uberspace-Server (CentOS) das nicht und es kommen einem eine handvoll Fehlermeldungen entgegen:

@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll lokal einrichten
 lang: de_DE
-tags: macOS, Debian, Jekyll
+tags: macOS Debian Jekyll
 ---
 
 Mit [github-Pages](https://pages.github.com/) gibt es eine einfache Möglichkeit

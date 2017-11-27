@@ -2,7 +2,7 @@
 layout: post
 title: ionic, XCode und Android SDK sowie Emulatoren unter macOS einrichten
 lang: de_DE
-tags: macOs, ionic, Android, iOS
+tags: macOS ionic Android iOS
 ---
 
 [Ionic](https://ionicframework.com/) ist ein Open-Source-Framework zur Erstellung von Hybrid-Apps (also iOS, Android und weitere) auf der Basis von HTML5, CSS, Sass und JavaScript und basiert auf AngularJS und Apache Cordova. Ionic baut auf [node.js](https://nodejs.org/) auf, dessen Paketmanager ist wiederum [npm](https://www.npmjs.com/).

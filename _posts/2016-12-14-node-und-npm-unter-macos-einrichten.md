@@ -2,7 +2,7 @@
 layout: post
 title: node und npm unter macOS einrichten
 lang: de_DE
-tags: macOS, node
+tags: macOS node
 ---
 
 Viele aktuelle Projekte wie z.B. ionic oder Ghost bauen auf [node.js](https://nodejs.org/) auf, dessen Paketmanager ist wiederum [npm](https://www.npmjs.com/).
