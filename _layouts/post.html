@@ -25,7 +25,7 @@ layout: default
 	  {% for tag in page.tags %}
 		{% capture tag_name %}{{ tag }}{% endcapture %}
 		<a class="no-underline" href="/tags/#{{ tag_name }}">
-			#{{ tag_name }}
+			{{ tag_name }}
 		</a>
 		{% unless forloop.last %},&nbsp;{% endunless %}
 	  {% endfor %}
