@@ -2,7 +2,7 @@
 layout: post
 title: Ein lokal vorhandenes git-Repository remote verfügbar machen
 lang: de_DE
-tags: git
+tags: git uberspace
 ---
 
 Oft hat man kleine Projekte die man eigentlich nur lokal bearbeiten wollte und es ergibt sich, dass man doch auf einem anderen Rechner Zugriff darauf braucht.   
@@ -20,6 +20,7 @@ Wie bekommt man jetzt das lokale Repository auf einen Rechner im Internet, z.B. 
     `git clone login@server:/PFAD.ZU.PROJEKT.git`
 
 ---
+
 __Update 2017:__
 Inzwischen nutze ich gitea auf dem uberspace, also nicht mehr "raw" git per ssh,
 an der prinzipiellen Vorgehensweise hat sich aber nichts geändert - nur die
