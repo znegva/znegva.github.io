@@ -2,7 +2,8 @@
 layout: post
 title: Jekyll lokal einrichten
 lang: de_DE
-tags: macOS Debian Jekyll
+tags: macOS Debian Jekyll snippets
+update: 2017-11-30
 ---
 
 Mit [github-Pages](https://pages.github.com/) gibt es eine einfache Möglichkeit
@@ -63,3 +64,23 @@ Wenn alles installiert ist kann ein kurzer Testlauf gestartet werden.
 ```
 
 Die Seite sollte jetzt unter `http://127.0.0.1:4000` aufrufbar sein.
+
+## Testen im Netzwerk
+
+Per default wird die Webseite nur von aus 127.0.0.1 geliefert, etwas unpraktisch
+wenn man die Seite auch mit anderen Geräten im Netzwerk (z.B. Smartphones) testen will.  
+Mann kann aber explizit die IP-Adresse bzw. host mitgeben.
+
+``` sh
+~/minimal % bundle exec jekyll serve --host=0.0.0.0
+```
+
+Jetzt ist die Webseite auch von allen anderen Computern im Netzwerk erreichbar,
+über die IP-Adresse des Rechners... einzig {% raw %}`{{ site.url }}`{% endraw %} in
+den templates/layouts linkt noch auf `0.0.0.0`.
+
+Auch das lässt sich beheben, indem man direkt die korrekte IP-Adresse mit übergibt:
+``` sh
+~/minimal % bundle exec jekyll serve --host=$(ipconfig getifaddr en0)
+```
+_(getestet mit zsh auf macOS)_
