@@ -114,6 +114,10 @@ ul.postlist{
     }
 }
 
+footer{
+    text-align: right;
+}
+
 
 @media print, screen and (max-width: 960px) {
   .wrapper, header, section, footer {
@@ -146,8 +150,16 @@ ul.postlist{
       }
       .nav {
           float: unset;
-          margin-top: 1rem;
+          width: 100%;
+          margin: 1rem 0;
+          border-top: 1px solid #e5e5e5;
+          border-bottom: 1px solid #e5e5e5;
+          padding: 0.5rem 0;
       }
+  }
+  section{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
   }
 
   ul.postlist{
@@ -158,6 +170,11 @@ ul.postlist{
       li .date{
           float: unset;
       }
+  }
+
+  footer{
+      border-top: 1px solid #e5e5e5;
+      text-align: left;
   }
 }
 
@@ -172,9 +189,6 @@ ul.postlist{
 /*
  * HELPERS
  */
-.right{
-    float: right;
-}
 .w50{
     width: 50%;
 }
