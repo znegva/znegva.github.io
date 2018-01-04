@@ -3,6 +3,7 @@ layout: post
 title: node und npm unter macOS einrichten
 lang: de_DE
 tags: macOS node
+update: 2018-01-04
 ---
 
 Viele aktuelle Projekte wie z.B. ionic oder Ghost bauen auf [node.js](https://nodejs.org/) auf, dessen Paketmanager ist wiederum [npm](https://www.npmjs.com/).
@@ -63,3 +64,16 @@ Linking /usr/local/Cellar/node/7.2.1... 7 symlinks created
 v7.2.1  
 ~ %
 ```
+
+__Ergänzung:__
+Wenn man `npm` aus irgendeinem Grund _sich selbst hat global updaten lassen_ und
+danach `node` mittels `brew` auf eine neuere Version updated, dann kann es passieren,
+dass `npm` (das global installierte) nicht mehr kompatibel mit der neuen `node`-Version
+ist.  
+Hier hilft ein beherztes:
+```
+~ % npm -g uninstall npm
+```
+
+Danach wird wieder die `npm`-Version aus dem `node`-Verzeichnis genutzt (diese sollten
+kompatibel sein).
