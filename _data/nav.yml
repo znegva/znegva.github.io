@@ -1,4 +1,7 @@
 items:
 
-- title: 'About / Über'
+
+footeritems:
+
+- title: 'about / über'
   url: /about.html
