@@ -23,11 +23,13 @@
         <span class="slogan">
             {{ site.description | default: site.github.project_tagline }}
         </span>
+        {% if site.data.nav.items.length > 0 %}
         <ul class="nav">
             {% for item in site.data.nav.items %}
               <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
             {% endfor %}
         </ul>
+        {% endif %}
       </header>
       <section>
 
@@ -35,10 +37,13 @@
 
       </section>
       <footer>
-          <small> 
+          <small>
               maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>
               | build with <a href="https://jekyllrb.com/">Jekyll</a>
               | hosted on <a href="https://pages.github.com/">GitHub Pages</a>
+              {% for item in site.data.nav.footeritems %}
+                | <a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a>
+              {% endfor %}
           </small>
       </footer>
     </div>
