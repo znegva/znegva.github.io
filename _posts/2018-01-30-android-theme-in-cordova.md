@@ -90,7 +90,7 @@ Let Cordova do the work, add the following to `config.xml`:
 ```xml
    <platform name="android">
         ...
-        <resource-file src="model/android_theme/styles.xml" target="app/src/main/res/values/styles.xml" />
+        <resource-file src="path/to/styles.xml" target="app/src/main/res/values/styles.xml" />
         <hook src="hooks/use.android.theme.js" type="before_compile" />
     </platform>
 ```
@@ -123,3 +123,7 @@ to use the Android theme used by `MainActivity`!
             });
     }
 ```
+
+See [here for details](https://developer.android.com/reference/android/app/TimePickerDialog.html)
+on why we have to use `0`:
+> If themeResId is 0, the dialog will be inflated using the theme specified by the android:timePickerDialogTheme attribute on the parent context's theme
