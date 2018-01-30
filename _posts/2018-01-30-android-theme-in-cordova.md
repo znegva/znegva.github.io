@@ -15,7 +15,7 @@ the color of the header in App-Quick-Change (when tapping the square).
 ### Step 1
 
 Generate your custom `styles.xml`:
-```
+```xml
 <resources>
     <color name="primaryColor">#0277BD</color>
     <color name="primaryColorDark">#004C8C</color>
@@ -47,13 +47,18 @@ Generate your custom `styles.xml`:
 </resources>
 ```
 
+Please note we defined a basic theme using our primaryColor for almost anything and
+we also defined another theme (inherited from `android:Theme.Material.Light.Dialog`)
+for date and time pickers.  
+The most important variable to set is `android:colorAccent` as from this variable most other
+color related variables are derived.
+
 ### Step 2
 
 Make sure our theme will be used for the app, therefore we prepare a [hook](http://cordova.apache.org/docs/en/latest/guide/appdev/hooks/index.html)-file
 which manipulated the `AndroidManifest.xml`-file.  
-
-and give it a useful name, such as `hooks/use.android.theme.js`:
-```
+Give it a useful name, such as `hooks/use.android.theme.js`:
+```js
 #!/usr/bin/env node
 // see https://stackoverflow.com/a/35128023
 module.exports = function(ctx) {
@@ -80,8 +85,9 @@ module.exports = function(ctx) {
 ```
 
 ### Step 3
-Let Cordova do the work, add to `config.xml`:
-```
+
+Let Cordova do the work, add the following to `config.xml`:
+```xml
    <platform name="android">
         ...
         <resource-file src="model/android_theme/styles.xml" target="app/src/main/res/values/styles.xml" />
@@ -89,4 +95,31 @@ Let Cordova do the work, add to `config.xml`:
     </platform>
 ```
 The first command copies the `styles.xml` where our App can find it later.  
-The second command runs the hook ()
+The second command runs the hook to manipulate `AndroidManifest.xml`.
+
+### Step 4
+
+To use our new theme with the datepickers provided by [Cordoava-plugin-datepicker](https://github.com/VitaliiBlagodir/cordova-plugin-datepicker)
+we need to explicitly set the `androidTheme`-option to `0` to tell the date-picker-plugin
+to use the Android theme used by `MainActivity`!
+
+```js
+    constructor(
+        public datePicker: DatePicker,
+    ){}
+
+    public showPicker(){
+        let options = {
+            ...
+            androidTheme: 0, //we need to set to 0, to use theme of MainActivity
+            ...
+        }
+        this.datePicker.show(options)
+            .then( (value: Date) => {
+                ...			
+            })
+            .catch ((err) => {
+				...
+            });
+    }
+```
