@@ -2,7 +2,6 @@
 layout: post
 title: Using a custom Android theme in Cordova App
 tags: ionic Cordova
-update: 2017-11-29
 ---
 
 Steps to use a custom Android theme with your Cordova App.  
