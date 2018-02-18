@@ -2,7 +2,7 @@
 layout: post
 title: 'automatisches Backup von BackInTime unter Debian wieder richten'
 lang: de_DE
-tags: Debian Backups
+tags: Debian backups
 ---
 
 Irgendwann fiel mir auf, dass das automatische Backup von [Back in Time](http://backintime.le-web.org/) nicht mehr funktionierte o.O   

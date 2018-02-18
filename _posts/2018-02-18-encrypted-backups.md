@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Encrypted backups with rsnapshot and gpg
-tags: macOS Debian backups
+title: Encrypted backups with rsnapshot and GPG
+tags: macOS Debian backups GPG rsync brew
 ---
 
 Currently I am using a backup strategy recoursing to rsnapshot and GPG on macOS as
@@ -91,7 +91,7 @@ __For macOS__ please be sure to use the GNU version of `cp` installed with `core
 The most important thing to consider is using tabs inside of `rsnapshot.conf` and
 end with a slash when backing up a directory!
 
-As you can see my rsnapshot-directory is `/Users/martin/rsnapshot/`, the `rsnapshot.conf` shown above is saved in this directory.
+As you can see my rsnapshot directory is `/Users/martin/rsnapshot/`, the `rsnapshot.conf` shown above is saved in this directory.
 
 __some of the excludes explained:__
 
@@ -119,6 +119,64 @@ and add:
 30 12 1 * *    /usr/local/bin/rsnapshot -c /Users/martin/rsnapshot/rsnapshot.conf monthly
 ```
 
-Be sure to define some times when your PC typically is on. Or use other tools such as `anacron` or `launchd` to shedule the backups.
+Be sure to define some times when your PC typically is on. Or use other tools such as `anacron` or `launchd` to schedule the backups.
 
 After some time there should be some directories `daily.0` to `daily.4` and so on in your `rsnapshot` directory.
+
+## Encryption
+
+Only a distributed backup is a good backup, so lets encrypt our files so we can put them anywhere without being scared of thieves.
+
+I use GPG with AES256 for encryption, if it is not already installed use the package manager of your choice to do so.
+
+I got into the habit of creating a backup every week or so, encrypt it, and put it to some external hard drives. To automate the generation I build a little script:
+
+```python
+#! /usr/bin/env python
+
+import subprocess
+import os
+import datetime
+import platform
+
+rsnapshotDir = "/Users/martin/rsnapshot/"
+deleteTarWhenFinished = True
+debug = False
+
+def print_green(t):
+	print('\033[92m' + t + '\033[0m')
+
+def call(command):
+	if debug:
+		print command
+	else:
+		subprocess.call(command, shell=True)
+
+def createBackup():
+	print_green("\n### Creating new backup with rsnapshot \n")
+	command = "rsnapshot -c " + rsnapshotDir + "rsnapshot.conf hourly"
+	call(command)
+
+def createAndEncryptTar():
+	print_green("\n### Creating tar-file from latest backup \n")
+	date = datetime.datetime.now().strftime("%Y%m%d")
+	os = platform.system()
+	latest = "hourly.0"
+	tarname = date + ".backup." + os + ".tar"
+	command = 'tar pcf ' + tarname + ' ' + latest
+	call(command)
+
+	print_green("\n### Encrypt tar-file \n")
+	command = "gpg -c --cipher-algo AES256 " + tarname
+	call(command)
+
+	if deleteTarWhenFinished:
+		print_green("\n### Deleting tar-file \n")
+		command = "rm " + tarname
+		call(command)
+
+createBackup()
+createAndEncryptTar()
+```
+
+At the end GPG asks for a password, be sure to use a good one that you can remember when shtf :).
