@@ -4,7 +4,7 @@ title: Encrypted backups with rsnapshot and GPG
 tags: macOS Debian backups GPG rsync brew
 ---
 
-Currently I am using a backup strategy recoursing to rsnapshot and GPG on macOS as
+Currently I am using a backup strategy recoursing to [rsnapshot](http://rsnapshot.org/) and [GPG](https://gnupg.org/) on macOS as
 well as on Debian.
 
 ## Setup ..
