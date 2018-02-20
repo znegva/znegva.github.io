@@ -129,7 +129,7 @@ Only a distributed backup is a good backup, so lets encrypt our files so we can 
 
 I use GPG with AES256 for encryption, if it is not already installed use the package manager of your choice to do so.
 
-I got into the habit of creating a backup every week or so, encrypt it, and put it to some external hard drives. To automate the generation I build a little script:
+I got into the habit of creating a backup every week or so, encrypt it, and put it to some external hard drives. To automate the generation I build a little script (which can also be found [here](https://gist.github.com/znegva/f87458068a66ea3bf06417d20889725b)):
 
 ```python
 #! /usr/bin/env python
