@@ -10,7 +10,7 @@ For production and/or testing any changes on these config-files should not be tr
 The first hasty idea would be to use `.gitignore`, but once a file is tracked any changes will be recognized by git.  
 The solution is `update-index` or `update-index --skip-worktree`!
 
-To ignore all current changes made to `my-file.config`
+To ignore all current changes made to `my-file.config` 
 ```
 git update-index my-file.config
 ```
