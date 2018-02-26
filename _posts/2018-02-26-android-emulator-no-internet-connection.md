@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android Emulator: No Internet Connection
+title: Android Emulator - No Internet Connection
 tags: Android
 ---
 
