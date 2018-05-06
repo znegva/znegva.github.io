@@ -3,7 +3,7 @@ layout: post
 title: Jekyll lokal einrichten
 lang: de_DE
 tags: macOS Debian Jekyll snippets
-update: 2017-11-30
+update: 2018-05-06
 ---
 
 Mit [github-Pages](https://pages.github.com/) gibt es eine einfache Möglichkeit
@@ -35,7 +35,7 @@ des Projektes) automatisch zu installieren/nutzen.
 
 
 
-## Debian 8
+## Debian
 
 Auch unter Debian nutzen wir wieder den Hauseigenen Paketmanager um zunächst
 die Ruby-Pakete zu installieren.  
@@ -79,8 +79,14 @@ Jetzt ist die Webseite auch von allen anderen Computern im Netzwerk erreichbar,
 über die IP-Adresse des Rechners... einzig {% raw %}`{{ site.url }}`{% endraw %} in
 den templates/layouts linkt noch auf `0.0.0.0`.
 
-Auch das lässt sich beheben, indem man direkt die korrekte IP-Adresse mit übergibt:
+Auch das lässt sich beheben, indem man direkt die korrekte IP-Adresse mit übergibt:  
+
+__macOS:__  
 ``` sh
 ~/minimal % bundle exec jekyll serve --host=$(ipconfig getifaddr en0)
 ```
-_(getestet mit zsh auf macOS)_
+
+__Debian:__  
+``` sh
+~/minimal % bundle exec jekyll serve --host=$(hostname -I | cut -d' ' -f1)
+```
