@@ -22,4 +22,4 @@ libsecret supports implementations of XDG Secret Service API such as the gnome-k
   ```
 
 
-Note: need at least git 2.11
+Note: needs at least git 2.11
