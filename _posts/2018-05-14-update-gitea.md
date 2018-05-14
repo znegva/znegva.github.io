@@ -11,7 +11,7 @@ Setup-guides (in german) can be found [here](https://blog.manuelhu.de/post/gogs-
    ```bash
    ~/bin/gitea % ./gitea dump
    ```
-2. download the latest gitea binary from `https://dl.gitea.io/gitea/`  
+2. download the latest gitea binary from <https://dl.gitea.io/gitea/>   
    ```bash
    ~/bin/gitea % wget "https://dl.gitea.io/gitea/1.4.1/gitea-1.4.1-linux-amd64"
    ```
