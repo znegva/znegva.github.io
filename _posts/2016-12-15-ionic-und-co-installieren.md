@@ -171,20 +171,21 @@ Neben iOS wollen wir natürlich auch für Android compilieren und emulieren kön
 der letzte Befehl startet den Android SDK Manager, eine grafische Oberfläche unter der wir die benötigten Versionen der SDK Tools, SDK Platform, Build Tools und System-Images (Emulatoren) herunterladen können.   
 Auch hier wieder mit Bedacht auswählen, insbesondere wenn die Internetanbindung nicht die schnellste ist!
 
----
+<div class="attention" markdown="1">
+
 __Update Q3 2017__: aktuell kann die gesamte Verwaltung der SDKs und Emulatoren nur noch
 über Android Studio halbwegs erträglich geregelt werden :-/.  
 
----
 __Update 2018__: `brew cask install java` installiert immer die aktuellste Java / Java-SDK Version - d.h. aktuell Java 10.  
-Cordova bzw. das Android SDK benötigt aber zwingend Java8.  
+Cordova bzw. das Android SDK benötigt aber zwingend Java8:  
 
 ``` sh
 ~ % brew tap caskroom/versions
 ~ % brew cask install java8
 ```
+</div>
 
----
+
 
 Wichtig ist auch unter Extras der _Intel X86 Emulator Accelerator (HAXM installer)_ installiert wird, ohne den funktioniert der Emulator nicht.
 
