@@ -27,7 +27,7 @@ Damit sollte auch schon alles für iOS eingerichtet sein.
 
 ---
 __Update 2017__: aktuell ist ionic Version 3.9, die Anleitung hier ist also vermutlich
-veraltet!
+veraltet!  
 
 ---
 
@@ -160,7 +160,7 @@ Juchu, nach laaanger Ladezeit ist das künstliche iPhone fertig und alles funkti
 
 ## Vorbereitungen Android
 
-Neben iOS wollen wir natürlich auch für Android compilieren und emulieren können, dazu benötigen wir Java (und eine schnelle Internetverbindung) und das Android SDK:
+Neben iOS wollen wir natürlich auch für Android compilieren und emulieren können, dazu benötigen wir Java (und eine schnelle Internetverbindung) und das Android SDK (Updates unten beachten!):
 
 ``` sh
 ~ % brew cask install java
@@ -175,6 +175,14 @@ Auch hier wieder mit Bedacht auswählen, insbesondere wenn die Internetanbindung
 __Update Q3 2017__: aktuell kann die gesamte Verwaltung der SDKs und Emulatoren nur noch
 über Android Studio halbwegs erträglich geregelt werden :-/.  
 
+---
+__Update 2018__: `brew cask install java` installiert immer die aktuellste Java / Java-SDK Version - d.h. aktuell Java 10.  
+Cordova bzw. das Android SDK benötigt aber zwingend Java8.  
+
+``` sh
+~ % brew tap caskroom/versions
+~ % brew cask install java8
+```
 
 ---
 
