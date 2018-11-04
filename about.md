@@ -9,7 +9,7 @@ __What's a znegva?__
 
 
 __Where is the _Impressum_?__  
-[Here](https://martinkausche.de/impressum.html)!
+[Here](https://martinkausche.de/seite/about)!
 
 
 __What about privacy / Datenschutz?__  
