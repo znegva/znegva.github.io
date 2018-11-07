@@ -3,6 +3,7 @@ layout: post
 title: Akkutausch Motorola RAZR i
 lang: de_DE
 tags: DIY Hardware
+update: 2018-11-07
 ---
 
 Mein liebgewonnenes Motorola RAZR i hatte nach langem zuverlässigem Einsatz plötzlich Aussetzer beim Akku, der angezeigte Akkustand schwankte innerhalb von Sekunden wild umher, es schaltete sich sporadisch aus.
@@ -83,3 +84,6 @@ Prozentanzeige bis heute nicht der Realität. Leer ist der Akku (Telefon schalte
 bei einer Darstellung von ~50%.  
 Wenn man sich dessen bewusst ist kann man das Telefon aber wieder ganz normal nutzen
 und hängt es einfach alle vier Tage an die Steckdose bevor der Akkustand auf unter 50% sinkt.
+
+__Update 2018-11-07:__ Nach einigen Wochen hatte sich der Akku dann doch wieder eingependelt und es wird ein realistischer Akkustand angezeigt.
+Das Telefon verrichtet noch immer fleißig seine Dienste als Zweitgerät.
