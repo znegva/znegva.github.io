@@ -33,7 +33,9 @@ Steps:
 - get yourself something else to to, this will keep some time
 
 Now its time to replace the hard disc, you can <s>google</s> [find many HowTos online](https://www.startpage.com/do/dsearch?query=mac+mini+replace+hard+drive).  
-One very helpful hint was to use a plastic card as kind of ramp to reinsert the drive - you'll know what I mean when you're at this point.
+- be careful with the metal cover and your RAM!
+- the HowTos tell you you need to lift some tape and unplug the WiFi - I could just put aside the metal cover without unpluging the WiFi.
+- one very helpful hint was to use a plastic card as kind of ramp to insert the drive - you'll know what I mean when you're at this point.
 
 After reassembly everything started up as usual, but waaay faster - great!
 
