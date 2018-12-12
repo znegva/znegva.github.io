@@ -4,35 +4,17 @@ title: Simple In-App-Purchase validation service
 tags: Cordova ionic node
 ---
 
-Very basic validation service which can be used in combination with [Cordova Purchase Plugin](https://github.com/j3k0/cordova-plugin-purchase).
+Very basic validation service which can be used in combination
+with [Cordova Purchase Plugin](https://github.com/j3k0/cordova-plugin-purchase).
+
+It is build on top of [Express](https://expressjs.com/), using
+[this excellent node.js module for in-app purchase](https://github.com/voltrue2/in-app-purchase).
 
 
 ```js
 /*
  * Example validations service to be used with j3k0/cordova-plugin-purchase
  * build with https://github.com/voltrue2/in-app-purchase and express
- */
-
-/*
- * related package.json:
-   {
-     "name": "simple-validation-service",
-     "version": "0.0.1",
-     "description": "a simple app store validation service",
-     "main": "app.js",
-     "scripts": {
-       "test": "echo \"Error: no test specified\" && exit 1"
-     },
-     "author": "Martin Kausche",
-     "license": "MIT",
-     "dependencies": {
-       "body-parser": "^1.18.3",
-       "cors": "^2.8.4",
-       "express": "^4.16.4",
-       "in-app-purchase": "github:voltrue2/in-app-purchase",
-       "morgan": "^1.9.1"
-     }
-   }
  */
 
 const PURCHASE_EXPIRED_CODE  = 6778003;  //the cordova-purchase-plugin expects these
@@ -219,4 +201,27 @@ app.post('/', (req, res) => {
 app.listen(port, () => {
   console.log(`*** in-app-purchase-validation-server listening (port ${port}) ***`);
 });
+```
+
+The related `package.json` to manage all used packages:
+
+```json
+{
+  "name": "simple-validation-service",
+  "version": "0.0.1",
+  "description": "a simple app store validation service",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Martin Kausche",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.4",
+    "in-app-purchase": "github:voltrue2/in-app-purchase",
+    "morgan": "^1.9.1"
+  }
+}
 ```
