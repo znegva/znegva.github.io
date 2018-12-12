@@ -10,6 +10,8 @@ with [Cordova Purchase Plugin](https://github.com/j3k0/cordova-plugin-purchase).
 It is build on top of [Express](https://expressjs.com/), using
 [this excellent node.js module for in-app purchase](https://github.com/voltrue2/in-app-purchase).
 
+I also created a [gist for this](https://gist.github.com/znegva/18c19acb2272cfce24583221a3b0251e),
+so if you have any suggestions for improvement please change it right there and let me know!
 
 ```js
 /*
