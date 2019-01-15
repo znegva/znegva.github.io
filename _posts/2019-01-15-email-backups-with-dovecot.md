@@ -92,7 +92,7 @@ You can stop the serve with:
 
 __manage your mails__
 
-Now you can configure your email-client of choice to point to an IMAP-account at `127.0.0.1` using any username and the password you set in `local.conf`.
+Now you can configure your email-client of choice to point to an IMAP-account to the boy you just installed dovecot (`127.0.0.1` if its the same machine your client runs on) using any username and the password you set in `local.conf`.
 
 __Backup__
 
