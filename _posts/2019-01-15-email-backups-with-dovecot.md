@@ -24,34 +24,22 @@ __adopt config-files__
 ~ % cp -pr /usr/local/Cellar/dovecot/2.3.2.1_1/share/doc/dovecot/example-config/ /usr/local/etc/dovecot/
 ```
 
-create `/use/local/etc/dovecot/local.conf` (shortended a bit, please see [post on xdeb.org for a commented example](https://xdeb.org/post/2014/03/07/running-dovecot-as-a-local-only-imap-server-on-os-x/)):
+create `/use/local/etc/dovecot/local.conf` (shortended a bit, please see [post on xdeb.org for a fully commented example](https://xdeb.org/post/2014/03/07/running-dovecot-as-a-local-only-imap-server-on-os-x/)):
 ```conf
 # A comma separated list of IPs or hosts where to listen in for connections. 
-# "*" listens in all IPv4 interfaces, "::" listens in all IPv6 interfaces.
 listen = 127.0.0.1
 
 # Protocols we want to be serving.
 protocols = imap
 
 # Static passdb.
-
-# This can be used for situations where Dovecot doesn't need to verify the
-# username or the password, or if there is a single password for all users:
 passdb {
   driver = static
   args = password=VERY_SECRET_PASSWORD
 }
 
 # Location for users' mailboxes. 
-#
-# There are a few special variables you can use, eg.:
-#
-#   %u - username
-#   %n - user part in user@domain, same as %u if there's no domain
-#   %d - domain part in user@domain, empty if there's no domain
-#   %h - home directory
-#
-# See doc/wiki/Variables.txt for full list. Some examples:
+#   %n - user part in user@domain
 mail_location = maildir:/Users/martin/%n
 
 
@@ -78,6 +66,8 @@ default_internal_group = mail
 default_process_limit = 10
 default_client_limit = 50
 ```
+
+If youn want to manage your backup-mails using your mobile phone, you should limit the `listen` parameter to your home wifi (eg `192.168.0.*`).
 
 disable/comment default auth-settings in `/usr/local/etc/dovecot/conf.d/10-auth.conf`
 ```conf
