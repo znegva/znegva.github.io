@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Howto update to macOS High Sierra
+title: How-to update to macOS High Sierra
 tags: macOS aaargh
 ---
 
@@ -18,6 +18,6 @@ _Hint: this is NO HowTo, just a rant!_
 * what do other people say? [_"if you leave it for a few hours it could finally get to the end of its task" .. "Sometimes updates can take 16 hours or more"_](https://www.macworld.co.uk/how-to/mac-software/how-fix-mac-that-wont-finish-macos-update-3624050/) - great news! What else is on my ToDo-list?
 * __15:30__ still no progress, time to go outside
 * __18:30__ back home, still no progress ... WTF
-* __18:35__ time to bring the big guns in: longpress Power-Button to power off .. wait few seconds and power on again ... the loading bar at 70% again .. lets do something else
+* __18:35__ time to bring the big guns in: long-press Power-Button to power off .. wait few seconds and power on again ... the loading bar at 70% again .. lets do something else
 * __18:45__ come back and there is the High Sierra Login Screen .... finally
 * __18:50__ start writing this rant

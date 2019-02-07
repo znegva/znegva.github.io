@@ -4,7 +4,7 @@ title: Mail backups with local Dovecot
 tags: backups
 ---
 
-For years I struggeled with the right way of backing up my emails  - operating systems, devices and mail-programs changed from time to time...
+For years I struggled with the right way of backing up my emails  - operating systems, devices and mail-programs changed from time to time...
 
 Maybe now I found the best way of doing it right: Use a locally installed [Dovecot](https://www.dovecot.org/) IMAP-Server storing to [Maildir](https://wiki2.dovecot.org/MailboxFormat/Maildir).
 
@@ -24,7 +24,7 @@ __adopt config-files__
 ~ % cp -pr /usr/local/Cellar/dovecot/2.3.2.1_1/share/doc/dovecot/example-config/ /usr/local/etc/dovecot/
 ```
 
-create `/use/local/etc/dovecot/local.conf` (shortended a bit, please see [post on xdeb.org for a fully commented example](https://xdeb.org/post/2014/03/07/running-dovecot-as-a-local-only-imap-server-on-os-x/)):
+create `/use/local/etc/dovecot/local.conf` (shortened a bit, please see [post on xdeb.org for a fully commented example](https://xdeb.org/post/2014/03/07/running-dovecot-as-a-local-only-imap-server-on-os-x/)):
 ```conf
 # A comma separated list of IPs or hosts where to listen in for connections. 
 listen = 127.0.0.1
@@ -67,7 +67,7 @@ default_process_limit = 10
 default_client_limit = 50
 ```
 
-If youn want to manage your backup-mails using your mobile phone, you should limit the `listen` parameter to your home wifi (eg `192.168.0.*`).
+If you want to manage your backup-mails using your mobile phone, you should limit the `listen` parameter to your home wifi (eg `192.168.0.*`).
 
 disable/comment default auth-settings in `/usr/local/etc/dovecot/conf.d/10-auth.conf`
 ```conf

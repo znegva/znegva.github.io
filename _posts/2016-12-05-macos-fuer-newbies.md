@@ -23,16 +23,16 @@ Abhilfe schaffte [folgende Anleitung](https://www.administrator.de/wissen/deuts
 
 *   die dort erhältliche `pc_tastatur.keylayout` in `~/Library/Keyboard Layouts` kopiert
 *   in den Systemeinstellungen unter Keyboard/Tastatur eine neue Eingabemethode hinzufügen
-*   im Menü oben neben der Uhr "PC Tastatur Deustch" auswählen
+*   im Menü oben neben der Uhr "PC Tastatur Deutsch" auswählen
 *   danach ging es in manchen Programmen, in anderen nicht - ich glaube ein Neustart hatte geholfen o.O
-*   `Alt` und `MOD` (aka Windowstaste) können vertauscht sein, das kann man in den Tastatureinstellungen unter `Modifier Keys...` tauschen
+*   `Alt` und `MOD` (aka Windows-Taste) können vertauscht sein, das kann man in den Tastatureinstellungen unter `Modifier Keys...` tauschen
 *   überhaupt sollte man sich an die neuen Namen gewöhnen   
     `Win` heißt `Command key`   
     `Alt` heißt `Option`   
     `Ctrl` heißt `Control` (na immerhin)
 *   auch andere gewohnte Tasten bzw. Kombinationen funktionieren anders (zumindest innerhalb der Mac Programme, z.B. im Browser kann das schon wieder anders sein):
     *   normal bewegt man sich mit `Ctrl + Links/Rechts`Wortweise durch einen Text, im macOS ist es `Alt + Links/Rechts`
-    *   `Pos1` und `End` funktionieren nicht (immer) um an den Anfang bzw Ende einer Zeile zu springen, stattdessen nimmt man `Win + Links/Rechts`
+    *   `Pos1` und `End` funktionieren nicht (immer) um an den Anfang bzw. Ende einer Zeile zu springen, stattdessen nimmt man `Win + Links/Rechts`
     *   statt `Ctrl+C` und `Ctrl+V` nimmt man `Win+C` und `Win+V`
     *   besonders nervig ist, dass die `Del` Taste zum löschen nicht funktioniert, man muss im Finder die Fingerübung `Win + Backspace` vollbringen
 
@@ -102,10 +102,10 @@ Hier mal ein großes Lob, die Druckereinrichtung war denkbar einfach, der EPSON 
 
 An so einigen Stellen waren Anpassungen an den Standardprogrammen von macOS notwendig um sie benutzbar zu machen
 
-Im **Finder** mittels `Win+Shift+G` die freie Auswahl für das anzuzeigende Verzeichnis öffnen und ins home-Verzeichenis `~` wechseln und dann dieses gleich mal in die Seitenleiste ziehen.
+Im **Finder** mittels `Win+Shift+G` die freie Auswahl für das anzuzeigende Verzeichnis öffnen und ins home-Verzeichnis `~` wechseln und dann dieses gleich mal in die Seitenleiste ziehen.
 
 Im **Chrome** `F5` zum reload der Seite einrichten:   
-In den Tastatureinstellungen einen neuen Shortcut für die Anwendung _Google Chrome_ einrichten - dort muss man ernsthaft die genaue Bezeichnung des Menüpunktes eintragen (wer denkt sich soetwas aus??).   
+In den Tastatureinstellungen einen neuen Shortcut für die Anwendung _Google Chrome_ einrichten - dort muss man ernsthaft die genaue Bezeichnung des Menüpunktes eintragen (wer denkt sich so etwas aus??).   
 `F5` wurde mit `Reload This Page` (cAsE sensitive!) und `F12` mit `Developer Tools` verknüpft.
 
 Als **Standardmediaplayer** etwas anderes als Quicktime einzurichten wird einem auch unnötig schwer gemacht:   

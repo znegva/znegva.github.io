@@ -6,8 +6,8 @@ tags: ionic Cordova
 
 Steps to use a custom Android theme with your Cordova App.  
 This affects the look of native dialogs such as the date-picker provided by
-[Cordoava-plugin-datepicker](https://github.com/VitaliiBlagodir/cordova-plugin-datepicker),
-the color of the some native-spinners (e.g. at App-Start), the statusbar and navigationbar color and
+[Cordova-plugin-datepicker](https://github.com/VitaliiBlagodir/cordova-plugin-datepicker),
+the color of the some native-spinners (e.g. at App-Start), the status-bar and navigation-bar color and
 the color of the header in App-Quick-Change (when tapping the square).
 
 
@@ -98,7 +98,7 @@ The second command runs the hook to manipulate `AndroidManifest.xml`.
 
 ### Step 4
 
-To use our new theme with the datepickers provided by [Cordoava-plugin-datepicker](https://github.com/VitaliiBlagodir/cordova-plugin-datepicker)
+To use our new theme with the date-pickers provided by [Cordova-plugin-datepicker](https://github.com/VitaliiBlagodir/cordova-plugin-datepicker)
 we need to explicitly set the `androidTheme`-option to `0` to tell the date-picker-plugin
 to use the Android theme used by `MainActivity`!
 

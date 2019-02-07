@@ -25,7 +25,7 @@ Grundlage um überhaupt sensible Daten wie Kalender und Kontakte selber zu hoste
 
 Wenn man einfach mal versucht [https://meinedomain.de](https://meinedomain.de/) im Browser aufzurufen wird man vermutlich von einem Warnhinweis empfangen der auf eine unsichere Verbindung hinweist. Das ist nur teilweise richtig ... verschlüsselt ist die Verbindung schon, nur nicht mit einem Zertifikat das auf meinedomain.de ausgestellt ist, sondern auf den uberspace-Server auf dem meinedomain.de liegt.
 
-Um schnell und einfach ein eigenes Zertifikat zu erhalten gibt es zum Glück seit kurzem die Initiatve [letsencrypt](https://letsencrypt.org/) und die uberspacer haben sich auch viel Mühe gegeben es ihren Kunden [möglichst einfach](https://wiki.uberspace.de/webserver:https#let_s-encrypt-zertifikate) zu machen dies zu nutzen.
+Um schnell und einfach ein eigenes Zertifikat zu erhalten gibt es zum Glück seit kurzem die Initiative [letsencrypt](https://letsencrypt.org/) und die uberspacer haben sich auch viel Mühe gegeben es ihren Kunden [möglichst einfach](https://wiki.uberspace.de/webserver:https#let_s-encrypt-zertifikate) zu machen dies zu nutzen.
 
 Basierend auf der [Wikiseite der uberspacer](https://wiki.uberspace.de/webserver:https#let_s-encrypt-zertifikate):
 
@@ -49,13 +49,13 @@ Auf dem Server kommt [baikal](http://sabre.io/baikal/) zum Einsatz. Einfach pe
 
 Damit ist der schwierigste Teil schon geschafft, weiter geht es im Browser zu [https://meinedomain.de/baikal/html/admin](https://meinedomain.de/baikal/html/admin).
 
-Sollte man hier auf die Meldung stoßen, dass eine aktuellere PHP-Version von nöten ist, so kann man dies einfach im uberspace in der Datei `etc/phpversion` einstellen ([genaueres hier](https://wiki.uberspace.de/development:php#php-version_einstellen)).
+Sollte man hier auf die Meldung stoßen, dass eine aktuellere PHP-Version von Nöten ist, so kann man dies einfach im uberspace in der Datei `etc/phpversion` einstellen ([genaueres hier](https://wiki.uberspace.de/development:php#php-version_einstellen)).
 
 Auf der Baikal-Seite wird den Anweisungen gefolgt und am Ende sollte man mindestens ein Benutzerkonto mit Kalendern und einem Adressbuch haben.
 
 ### auf dem Androiden
 
-Zur Kommunikation mit dem soeben eingerichteten calDAV / cardDAV Server kommt [DAVDroid](https://davdroid.bitfire.at/) zum Einsatz, es stellt eine Schnittstelle für jeden auf dem telefon installierten Kalender oder Kontaktverwalter zur Verfügung.   
+Zur Kommunikation mit dem soeben eingerichteten calDAV / cardDAV Server kommt [DAVDroid](https://davdroid.bitfire.at/) zum Einsatz, es stellt eine Schnittstelle für jeden auf dem Telefon installierten Kalender oder Kontaktverwalter zur Verfügung.   
 Erhältlich ist es im [Google Store](https://play.google.com/store/apps/details?id=at.bitfire.davdroid&referrer=utm_source%3Dhomepage) oder auch im [F-Droid](https://f-droid.org/repository/browse/?fdfilter=davdroid&fdid=at.bitfire.davdroid).
 
 Bei den Einstellungen wählt man "Login by URL" und wählt bei der URL `https://meinedomain.de/baikal/html/dav.php` aus. Login und Passwort hatte man bei der Einrichtung zuvor festgelegt.
@@ -75,7 +75,7 @@ Für Kalender richtet man einfach einen neuen CalDAV-Kalender ein:
 *   wenn man mehrere Kalender eingerichtet hat, dann muss jeder Kalender separat eingebunden werden
 
 Für die Kontakte via CardDAV ist ein zusätzliches AddOn erforderlich, ich habe mich für den [SOGo Connector](http://sogo.nu/download.html#/frontends) entschieden.   
-Nachdem man das Addon installiert hat kann man das Adressbuch vom baikal-Server einbinden:
+Nachdem man das Add-On installiert hat kann man das Adressbuch vom baikal-Server einbinden:
 
 *   `Tools --> Adress Book`
 *   im Adressbuch: `File --> New --> Remote Adress Book`
@@ -86,7 +86,7 @@ Nachdem man das Addon installiert hat kann man das Adressbuch vom baikal-Server 
 
 Wenn man nicht auf Thunderbird/Icedove zurückgreifen möchte kann man natürlich auch die eingerichteten Kalender und Adressbücher verwenden, nur ist es ein wenig umständlicher.
 
-Der erste Schritt ist die Daten erstmal loakl abzuspeichern, dazu wird [vdirsyncer](https://github.com/pimutils/vdirsyncer) verwendet.
+Der erste Schritt ist die Daten erstmal lokal abzuspeichern, dazu wird [vdirsyncer](https://github.com/pimutils/vdirsyncer) verwendet.
 
 Um `vdirsync` unter Debian zum laufen zu bringen ist es wohl das einfachste <a>`pipsi`</a> zu verwenden (wenn man sich das script nur in einem virtualenv installieren will - wenn man sowieso z.B. khal mit pip3 installieren muss (weil man im Debian stable nicht mal einfach so auf python3 als default umstellen kann/sollte...), dann kann man sich den _Umweg_ über `pipsi` sparen, siehe unten).
 
@@ -144,7 +144,7 @@ Die Kalender landen nach einem
 
 in `~/calendars/`, die Kontakte als vcf-Dateien in `~/contacts`.
 
-Einen regelmäßigen Sync kann man per cronjob einrichten. Dabei bedeken dass man `cron` noch in dessen `PATH` mitteilen sollte, dass es in `~/.local/bin` (installiert mit `pipsi`) bzw. `/usr/local/bin/` (installiert mit `pip`) nach `vdirsyncer` gucken kann.
+Einen regelmäßigen Sync kann man per cronjob einrichten. Dabei bedenken dass man `cron` noch in dessen `PATH` mitteilen sollte, dass es in `~/.local/bin` (installiert mit `pipsi`) bzw. `/usr/local/bin/` (installiert mit `pip`) nach `vdirsyncer` gucken kann.
 
 #### Kalender
 
@@ -252,10 +252,10 @@ Auch hier gestaltet sich alles sehr einfach, entweder über den [Play Store](ht
 
 ### Zusammenführung der Clients
 
-Im Gegensatz zu BTSync müssen bei Syncthing zunächst alle Installationen (bzw. Devices) miteinander bekannt gemacht werden. Dazu müssen auf jedem Client die jeweils anderen eingetragen werden, die Identifikation erfolgt über die sog. Device-IDs (die kann man entweder umständlich abtippen oder man nutzt die Möglichkeit über QR-Codes und die Kamera des Androiden). Sobald man ein Device eingetragen hat dauert es nicht lange und das jeweils andere Gerät fragt nach Bestätigung - mit etwas Gedult kann man also recht schnell alle miteinander bekannt machen.   
+Im Gegensatz zu BTSync müssen bei Syncthing zunächst alle Installationen (bzw. Devices) miteinander bekannt gemacht werden. Dazu müssen auf jedem Client die jeweils anderen eingetragen werden, die Identifikation erfolgt über die sog. Device-IDs (die kann man entweder umständlich abtippen oder man nutzt die Möglichkeit über QR-Codes und die Kamera des Androiden). Sobald man ein Device eingetragen hat dauert es nicht lange und das jeweils andere Gerät fragt nach Bestätigung - mit etwas Geduld kann man also recht schnell alle miteinander bekannt machen.   
 Im nächsten Schritt können dann Verzeichnisse miteinander geteilt werden.
 
-Sobald das eingerichtet ist sind wir auch schon fertig, evtl. sollte man noch das Syncronisationsinterval etwas an seine eigenen Bedürfnisse anpassen.
+Sobald das eingerichtet ist sind wir auch schon fertig, evtl. sollte man noch das Synchronisation-Interval etwas an seine eigenen Bedürfnisse anpassen.
 
 ## ToDos mittels WebDAV
 
@@ -265,7 +265,7 @@ Der Grund wieso ich im Endeffekt nicht auf diese Weise meine ToDos verwaltete is
 
 ### auf dem Server
 
-Da wir schon bei Kalendern und Kontakten auf webDAV zurückgegriffen haben bietet es sich an auch für ToDos (bzw. geneuer gesagt eine todo.txt) diese Möglichkeit zu nutzen.   
+Da wir schon bei Kalendern und Kontakten auf webDAV zurückgegriffen haben bietet es sich an auch für ToDos (bzw. genauer gesagt eine todo.txt) diese Möglichkeit zu nutzen.   
 Prinzipiell könnte man zwar auch _einfach_ einen Sync per SSH/rsync durchführen, aber beim Gedanken meinen uberspace SSH-Key (bzw. Passwort) auf dem Handy zu hinterlegen ist mir nicht ganz wohl.
 
 Also webDAV auf dem uberspace einrichten:
@@ -338,11 +338,11 @@ Service anlegen, damit die Apache Instanz auch nach einem reboot läuft:
 
     ~ $ uberspace-setup-service webdav /usr/sbin/httpd -f ~/etc/webdav/apache2.conf -D FOREGROUND
 
-Ferig ist der webDAV, der unter der neuen subdomain erreichbar ist. Wichtig ist zu beachten, dass wir immer per https zugreifen sollten, da ansonsten die Logindaten unverschlüsselt übertragen werden.
+Fertig ist der webDAV, der unter der neuen subdomain erreichbar ist. Wichtig ist zu beachten, dass wir immer per https zugreifen sollten, da ansonsten die Logindaten unverschlüsselt übertragen werden.
 
 ### auf dem Desktop
 
-Für die Syncronisation der todo.txt zwischen Desktop und webDAV (bzw. genauer gesagt dem Verzeichnis `~/data/webdav/todo`) verwende ich einfach <a>unison</a> über SSH. Der SSH Key liegt sowieso auf dem Rechner und auf dem uberspace ist unison installiert - diesmal galt doch _wieso kompliziert wenn es auch einfach geht_.   
+Für die Synchronization der todo.txt zwischen Desktop und webDAV (bzw. genauer gesagt dem Verzeichnis `~/data/webdav/todo`) verwende ich einfach <a>unison</a> über SSH. Der SSH Key liegt sowieso auf dem Rechner und auf dem uberspace ist unison installiert - diesmal galt doch _wieso kompliziert wenn es auch einfach geht_.   
 Über die GUI (`unison-gtk`) kann man sich ein Profil anlegen, welches dann einfach in der Konsole mittels `unison PROFILNAME` aufgerufen werden kann. Ein regelmäßiger Abgleich kann mittels cron erreicht werden.
 
 In Zukunft muss ich mich mal mit dem `-repeat watch`Parameter von unison beschäftigen, es scheint möglich zu sein einen sync anzuwerfen wenn Änderungen durchgeführt werden...

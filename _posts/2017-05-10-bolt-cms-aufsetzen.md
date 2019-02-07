@@ -7,7 +7,7 @@ tags: BoltCMS
 
 ## Installation
 
-Auf dem lokalen Rechner hat die normale commandline Installation aus der [Bolt Doku](https://docs.bolt.cm/3.2/installation/install-command-line) problemlos geklappt:
+Auf dem lokalen Rechner hat die normale command-line Installation aus der [Bolt Doku](https://docs.bolt.cm/3.2/installation/install-command-line) problemlos geklappt:
 
 ``` sh
 ~ % mkdir mybolt && cd mybolt

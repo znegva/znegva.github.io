@@ -22,11 +22,11 @@ Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 
 *   `sudo apachectl start` zum starten des Webservers
 *   `sudo apachectl stop` zum beenden des Webservers
-*   `sudo apachectl restart` zum neustarten des Webservers
+*   `sudo apachectl restart` zum neu starten des Webservers
 
 ## Nutzerverzeichnisse einrichten
 
-Es bietet sich an individuelle Nutzerverzeichnisse für die eigenen HTML bzw PHP Projekte zu verwenden, auf diese Weise muss nicht dauerhaft mit root-Rechten im `/Library/WebServer/Documents/` geschrieben werden.
+Es bietet sich an individuelle Nutzerverzeichnisse für die eigenen HTML bzw. PHP Projekte zu verwenden, auf diese Weise muss nicht dauerhaft mit root-Rechten im `/Library/WebServer/Documents/` geschrieben werden.
 
 Dazu wird zunächst ein Verzeichnis `Sites` für den aktuellen Nutzer erstellt und anschließend eine entsprechende conf-Datei angelegt
 
@@ -80,7 +80,7 @@ und den Apachen neu starten
 
 Ab jetzt sollten Dateien aus `~/Sites` unter `http://localhost/~martin/` erreichbar sein.
 
-Sollte der Webserver bzw PHP schreibend auf angelegte Dateien zugreifen müssen, dann müssen entsprechende verzeichnisse noch der Gruppe `_www`zugewiesen werden, und der Gruppe Schreibrechte gegeben werden.
+Sollte der Webserver bzw. PHP schreibend auf angelegte Dateien zugreifen müssen, dann müssen entsprechende Verzeichnisse noch der Gruppe `_www`zugewiesen werden, und der Gruppe Schreibrechte gegeben werden.
 
 ``` sh
 ~/Sites % sudo chgrp -R _www ./TEST

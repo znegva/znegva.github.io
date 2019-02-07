@@ -16,7 +16,7 @@ Wie bekommt man jetzt das lokale Repository auf einen Rechner im Internet, z.B. 
     `git remote add origin login@server:/PFAD.ZU.PROJEKT.git`
 *   lokales Repository pushen   
     `git push --mirror origin`
-*   auf dem zweiten Rechner dann einfach clonen mittels   
+*   auf dem zweiten Rechner dann einfach klonen mittels   
     `git clone login@server:/PFAD.ZU.PROJEKT.git`
 
 ---

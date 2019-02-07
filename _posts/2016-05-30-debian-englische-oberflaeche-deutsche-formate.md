@@ -12,7 +12,7 @@ in `/etc/default/locale`:
     LANG="de_DE.UTF-8"  
     LC_MESSAGES="en_US.UTF.8"  
 
-Nach einem Neustart kann man dann prüfen ob alle sgeklapt hat:
+Nach einem Neustart kann man dann prüfen ob alles geklappt hat:
 
     ~ % locale
     LANG="de_DE.UTF-8"  

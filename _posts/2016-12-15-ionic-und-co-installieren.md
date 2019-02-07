@@ -112,7 +112,7 @@ Das ging schonmal gut, die iOS Platform hat er schon von alleine hinzugefügt - 
 ~ % npm install -g ios-deploy
 ```
 
-### für iOS compilieren und im Emulator starten
+### für iOS kompilieren und im Emulator starten
 
 ``` sh
 ~/temp % cd myApp
@@ -160,7 +160,7 @@ Juchu, nach laaanger Ladezeit ist das künstliche iPhone fertig und alles funkti
 
 ## Vorbereitungen Android
 
-Neben iOS wollen wir natürlich auch für Android compilieren und emulieren können, dazu benötigen wir Java (und eine schnelle Internetverbindung) und das Android SDK (Updates unten beachten!):
+Neben iOS wollen wir natürlich auch für Android kompilieren und emulieren können, dazu benötigen wir Java (und eine schnelle Internetverbindung) und das Android SDK (Updates unten beachten!):
 
 ``` sh
 ~ % brew cask install java
@@ -208,7 +208,7 @@ Hier ein Device erstellen und starten - als _CPU/ABI_ sollten wir eine Intel X
 
 Jetzt kann es aber endlich losgehen:
 
-## für Android compilieren und im Emulator starten
+## für Android kompilieren und im Emulator starten
 
 Android als Zielplattform hinzufügen:
 
@@ -254,7 +254,7 @@ BUILD SUCCESSFUL
 Total time: 1.536 secs
 ```
 
-compilieren und an den schon laufenden Emulator senden:
+kompilieren und an den schon laufenden Emulator senden:
 
 ``` sh
 ~/temp/myApp % ionic emulate android
@@ -310,7 +310,7 @@ Neben dem virtuellen iPhone ist auch das virtuelle Android bereit für die Arbei
 
 Es kann vorkommen, dass der PATH zu den Android-Tools vergessen wird (ich glaube das passierte als das android-sdk-Paket innerhalb von brew von core nach cask verschoben wurde).
 
-In diesem Fall einfach von Hand innerhalb der `~/.zshrc`bzw. `~/.bashrc` ergänzen:
+In diesem Fall einfach von Hand innerhalb der `~/.zshrc` bzw. `~/.bashrc` ergänzen:
 
 ``` conf
 ANDROID_HOME=/usr/local/opt/android-sdk  

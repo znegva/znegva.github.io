@@ -43,7 +43,7 @@ Die Logmeldungen (per default gehen die praktischerweise an `/dev/null`) ließe
         raise child_exception
     OSError: [Errno 2] No such file or directory  
 
-Das Komische war, dass ein manuell angestoßenes Backup problemlos funktionierte - bevor man jetzt den Fehler innerhalb des Backintime Codes sucht oder ein update installiert (wir sind unter Debain stable o.O) wird ein herumarbeiten um den Fehler also vermutlich die schnellere Lösung sein.
+Das Komische war, dass ein manuell angestoßenes Backup problemlos funktionierte - bevor man jetzt den Fehler innerhalb des Backintime Codes sucht oder ein update installiert (wir sind unter Debian stable o.O) wird ein herum-arbeiten um den Fehler also vermutlich die schnellere Lösung sein.
 
  *   das automatische backup in BackInTime abgestellt, funktioniert ja sowieso nicht
  *   in Script geschrieben, in dem alle Pfade nochmals exportiert werden und mit Rückmeldung an mich (und nicht an `/dev/null` wie beim von BackInTime angelegten Crontab-Eintrag)

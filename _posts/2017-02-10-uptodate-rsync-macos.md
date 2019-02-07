@@ -30,9 +30,9 @@ Die kann man auch direkt mittels `tap` aktivieren und dann rsync installieren:
 ~ % brew install rsync
 ```
 
-Nachdem alle Abhängigkeiten installiert und `rsync`compiliert ist liegt es in einer aktuellen Version in `/usr/local/bin/` vor.
+Nachdem alle Abhängigkeiten installiert und `rsync` kompiliert ist liegt es in einer aktuellen Version in `/usr/local/bin/` vor.
 
-Wenn man dieses standardmäßig nutzen möchte ist noch eine Anpassung in `/private/etc/paths`vornehmen, und zwar `/usr/local/bin` vor `/usr/bin`sortieren.   
+Wenn man dieses standardmäßig nutzen möchte ist noch eine Anpassung in `/private/etc/paths` vornehmen, und zwar `/usr/local/bin` vor `/usr/bin` sortieren.   
 Alternativ kann man natürlich auch die neue Version direkt als `usr/local/bin/rsync` aufrufen bzw. angeben.
 
 ``` sh

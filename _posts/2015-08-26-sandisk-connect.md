@@ -14,7 +14,7 @@ Um das auch einfach unter Debian bewerkstelligen zu können muss man erst mal 
 
 Jetzt zu den erdachten Anwendungsfällen im Urlaub:
 
-*   einfache Backupmöglichkeit für Fotos und Videos auf das alle Geräte (man macht ja heute mit zich verschiedenen Fotos) immer einfach Zugriff haben
+*   einfache Backup-Möglichkeit für Fotos und Videos auf das alle Geräte (man macht ja heute mit zig verschiedenen Fotos) immer einfach Zugriff haben
 *   Daten einfach zwischen allen Geräten austauschen zu können - dazu hat es sich als sinnvoll erwiesen sich im gleichen Netzwerk zu befinden. Genau das bietet mir die silberkiste, sie ist auch WLAN-Router
 *   wenn doch mal Langeweile aufkommt ein paar Filme bereit zu haben
 

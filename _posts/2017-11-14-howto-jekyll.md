@@ -6,7 +6,7 @@ tags: macOS Debian Jekyll snippets
 update: 2018-05-06
 ---
 
-Mit [github-Pages](https://pages.github.com/) gibt es eine einfache Möglichkeit
+Mit [GitHub-Pages](https://pages.github.com/) gibt es eine einfache Möglichkeit
 eine statische Webseite zu veröffentlichen. Dabei wird auf den Jekyll als
 Static Site Generator gesetzt.
 
@@ -23,7 +23,7 @@ Unter macOS bekommt man mit `brew` eine relativ aktuelle Ruby Version
 ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-darwin16]
 ```
 
-Anschließend kann man sich mit dem Ruby-eigenen Peketmanager `gem` die nötigen
+Anschließend kann man sich mit dem Ruby-eigenen Paketmanager `gem` die nötigen
 Ruby-Pakete in aktueller Version installieren:
 ``` zsh
 ~ % gem install bundler jekyll

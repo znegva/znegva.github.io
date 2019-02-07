@@ -16,11 +16,11 @@ Aber davon läßt man sich ja nicht aufhalten.
 
 ![](/assets/razri-20170214-225645402.jpg)
 
-Vorbreitung:
+Vorbereitung:
 
 *   ausschalten :-)
 *   SIM-Karte und SD-Karte entfernen
-*   Erstzakku bestellen, die genaue Bezeichnung des RAZR i lautet XT890, damit findet man eine Menge Akkus und muss sich nur für den vertrauenswürdigsten Verkäufer entscheiden
+*   Ersatzakku bestellen, die genaue Bezeichnung des RAZR i lautet XT890, damit findet man eine Menge Akkus und muss sich nur für den vertrauenswürdigsten Verkäufer entscheiden
 
 Werkzeuge / Zubehör:
 
@@ -29,7 +29,7 @@ Werkzeuge / Zubehör:
 *   doppelseitiges Klebeband
 *   Fön
 
-Als erstes entfernt man die Abdeckung im unteren Bereich, der ist einfach nur eingeklemmt und kann einfach vorsichtig mit dem Spatel von unten her ausgehebeln.
+Als erstes entfernt man die Abdeckung im unteren Bereich, der ist einfach nur eingeklemmt und kann vorsichtig mit dem Spatel von unten her ausgehebelt werden.
 
 Dann noch den Motorola-Schriftzug oben entfernen, der ist geklebt und man muss mit dem Spatel oder einer Rasierklinge darunter und mit viel Gefühl ablösen (hier kann der Fön helfen, indem der Kleber vorher etwas angewärmt wird).
 
