@@ -14,8 +14,6 @@ This page shall give an overview of [my activities on Github](https://github.com
 [![Build Status](https://travis-ci.com/znegva/resources-generator.svg?branch=master)](https://travis-ci.com/znegva/resources-generator)
 [![codecov](https://codecov.io/gh/znegva/resources-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/znegva/resources-generator)
 [![npm version](https://badge.fury.io/js/resources-generator.svg)](https://badge.fury.io/js/resources-generator)
-<i class="fab fa-node"></i>
-<i class="fab fa-npm"></i>
 
 The key reason to start this project was that I couldn't find a suitable tool for creating graphics for a Cordova project that could exactly meet all my requirements.
 It should be easy to configure and support the creation of NinePatch images for the Android platform.
@@ -69,6 +67,35 @@ Hyde is a brazen two-column theme that pairs a prominent sidebar with uncomplica
 | Twig template engine | [Github project repository](https://github.com/znegva/hyde-for-bolt)        |
 | CSS                  | [Bolt CMS market entry](https://market.bolt.cm/view/znegva/bolt-theme-hyde) |
 | some JavaScript      |                                                                             |
+
+
+&nbsp;
+
+## znegva.github.io (this site)
+<i class="fab fa-github"></i>
+<i class="fab fa-markdown"></i>
+
+The website you are watching right now.
+I have always documented my technology-related activities where necessary - also to be able to reproduce certain decisions, processes or settings later.
+Topics that might be of use to others can be published.
+
+| Tools                | Links                                                                   |
+| -------------------- | ----------------------------------------------------------------------- |
+| Markdown             | [Github project repository](https://github.com/znegva/znegva.github.io) |
+| Jekyll, GitHub Pages |                                                                         |
+
+&nbsp;
+
+## zerodistraction theme
+
+I also created the [zerodistraction theme](https://github.com/znegva/zerodistraction-theme) for [Pelican](https://blog.getpelican.com/), a static site generator written in Python.
+
+&nbsp;
+
+## Oscar-Ghost-mod theme
+
+I also [modified the Oscar theme](https://github.com/znegva/oscar-ghost-mod) for [Ghost](https://ghost.org/), a blogging platform for Node.js.
+
 
 <!--
 ## Appreciations
