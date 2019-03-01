@@ -14,7 +14,7 @@ Please also note [this list of my pull requests and issues on other projects](ht
 
 ## resources-generator
 [![Build Status](https://travis-ci.com/znegva/resources-generator.svg?branch=master)](https://travis-ci.com/znegva/resources-generator)
-[![codecov](https://codecov.io/gh/znegva/resources-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/znegva/resources-generator)
+[![Codecov](https://codecov.io/gh/znegva/resources-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/znegva/resources-generator)
 [![npm version](https://badge.fury.io/js/resources-generator.svg)](https://badge.fury.io/js/resources-generator)
 
 The key reason to start this project was that I couldn't find a suitable tool for creating graphics for a Cordova project that could exactly meet all my requirements.
@@ -35,7 +35,7 @@ To try out the release of the script itself via npm, continuous integration via 
 | Mocha and Chai for testing |                                                                            |
 | npm                        | [npm project page](https://www.npmjs.com/package/resources-generator)      |
 | Travis CI                  | [Travis CI project page](https://travis-ci.com/znegva/resources-generator) |
-| Codecov                    | [Codecov projekt page](https://codecov.io/gh/znegva/resources-generator)   |
+| Codecov                    | [Codecov project page](https://codecov.io/gh/znegva/resources-generator)   |
 
 
 &nbsp;
