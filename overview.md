@@ -6,7 +6,9 @@ title: GitHub Overview
 
 # GitHub Overview
 
-This page shall give an overview of [my activities on Github](https://github.com/search?q=author%3Aznegva&type=Issues) and short explanations about my public projects.
+This page shall give an overview of my public projects.
+
+Please also note [this list of my pull requests and issues on other projects](https://github.com/search?q=author%3Aznegva&type=Issues).
 
 &nbsp;
 
@@ -35,11 +37,32 @@ To try out the release of the script itself via npm, continuous integration via 
 | Travis CI                  | [Travis CI project page](https://travis-ci.com/znegva/resources-generator) |
 | Codecov                    | [Codecov projekt page](https://codecov.io/gh/znegva/resources-generator)   |
 
+
+&nbsp;
+
+## In-App-Purchase validation service
+<i class="fas fa-server"></i>
+<i class="fab fa-node-js"></i>
+
+For a number of Cordova projects, I use the [Cordova Plugin Purchase](https://github.com/j3k0/cordova-plugin-purchase) plugin to perform in-app purchases.
+
+In order to be able to use the plugin to its full extent, an additional service is required that is operated independently of the actual app and takes care of the validation of purchases from the Apple App Store as well as the Google Play Store.
+
+Such a service was realized with the help of this [node.js module for in-app purchases](https://github.com/voltrue2/in-app-purchase) and [Express](https://expressjs.com/) and is operated by me on a separate server.
+
+The script that is actually used is not hosted on GitHub due to login credentials - but a short explanation, which should allow other users a similar realization, can be found in a blog entry and in a gist.
+
+| Tools   | Links                                                                            |
+| ------- | -------------------------------------------------------------------------------- |
+| Node.js | [blog entry](https://znegva.github.io/2018/12/12/simple-validation-service.html) |
+|         | [related gist](https://gist.github.com/znegva/18c19acb2272cfce24583221a3b0251e)  |
+
 &nbsp;
 
 ## gurzr (Bolt CMS theme)
 
 <i class="fab fa-php"></i>
+<i class="fab fa-html5"></i>
 <i class="fab fa-sass"></i>
 <i class="fab fa-css3"></i>
 <i class="fab fa-js"></i> 
@@ -56,6 +79,7 @@ A single column theme for [Bolt CMS](//bolt.cm), with support for image gallerie
 
 ## Hyde for Bolt (Bolt CMS theme)
 <i class="fab fa-php"></i>
+<i class="fab fa-html5"></i>
 <i class="fab fa-css3"></i>
 <i class="fab fa-js"></i>
 
@@ -87,12 +111,19 @@ Topics that might be of use to others can be published.
 &nbsp;
 
 ## zerodistraction theme
+<i class="fab fa-python"></i>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3"></i>
+<i class="fab fa-js"></i>
 
 I also created the [zerodistraction theme](https://github.com/znegva/zerodistraction-theme) for [Pelican](https://blog.getpelican.com/), a static site generator written in Python.
 
 &nbsp;
 
 ## Oscar-Ghost-mod theme
+<i class="fab fa-node-js"></i>
+<i class="fab fa-html5"></i>
+<i class="fab fa-css3"></i>
 
 I also [modified the Oscar theme](https://github.com/znegva/oscar-ghost-mod) for [Ghost](https://ghost.org/), a blogging platform for Node.js.
 
