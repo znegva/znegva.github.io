@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Simple In-App-Purchase validation service
-tags: Cordova ionic node
+tags: Cordova ionic node GitHub
+update: 2019-03-04
 ---
 
 Very basic validation service which can be used in combination
@@ -10,10 +11,17 @@ with [Cordova Purchase Plugin](https://github.com/j3k0/cordova-plugin-purchase).
 It is build on top of [Express](https://expressjs.com/), using
 [this excellent node.js module for in-app purchase](https://github.com/voltrue2/in-app-purchase).
 
-I also created a [gist for this](https://gist.github.com/znegva/18c19acb2272cfce24583221a3b0251e),
-so if you have any suggestions for improvement please change it right there and let me know!
+<s>I also created a gist for this, so if you have any suggestions for improvement please change it right there and let me know!</s>
 
-```js
+__Update:__ The script has been updated a bit and there is a repository now: [znegva/iap_validation_service](https://github.com/znegva/iap_validation_service).  
+Please file issues and pull requests there.
+
+
+Obsolete original content below
+
+---
+
+~~~js
 /*
  * Example validations service to be used with j3k0/cordova-plugin-purchase
  * build with https://github.com/voltrue2/in-app-purchase and express
@@ -213,11 +221,11 @@ app.listen(port, () => {
     `*** in-app-purchase-validation-server listening (port ${port}) ***`
   );
 });
-```
+~~~
 
 The related `package.json` to manage all used packages:
 
-```json
+~~~json
 {
   "name": "simple-validation-service",
   "version": "0.0.1",
@@ -236,4 +244,4 @@ The related `package.json` to manage all used packages:
     "morgan": "^1.9.1"
   }
 }
-```
+~~~

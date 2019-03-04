@@ -50,12 +50,13 @@ In order to be able to use the plugin to its full extent, an additional service 
 
 Such a service was realized with the help of this [node.js module for in-app purchases](https://github.com/voltrue2/in-app-purchase) and [Express](https://expressjs.com/) and is operated by me on a separate server.
 
-The script that is actually used is not hosted on GitHub due to login credentials - but a short explanation, which should allow other users a similar realization, can be found in a blog entry and in a gist.
+The script is hosted on GitHub.  
+But to be able to perform the tests login credentials to App Stores and some receipt data is needed - these are not provided via Github.
 
-| Tools   | Links                                                                            |
-| ------- | -------------------------------------------------------------------------------- |
-| Node.js | [blog entry](https://znegva.github.io/2018/12/12/simple-validation-service.html) |
-|         | [related gist](https://gist.github.com/znegva/18c19acb2272cfce24583221a3b0251e)  |
+| Tools                      | Links                                                                         |
+| -------------------------- | ----------------------------------------------------------------------------- |
+| Node.js, Express           | [Github project repository](https://github.com/znegva/iap_validation_service) |
+| Mocha and Chai for testing |                                                                               |
 
 &nbsp;
 
