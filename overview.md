@@ -70,6 +70,8 @@ But to be able to perform the tests login credentials to App Stores and some rec
 
 A single column theme for [Bolt CMS](//bolt.cm), with support for image galleries, GPX tracks, optional password protection for posts and some individual customisation options.
 
+From time to time I publish pictures of excursions on my private website, sometimes including hiking routes. I couldn't find a theme that fulfilled all my requirements (technical as well as optical), so I made one myself.
+
 | Tools                | Links                                                                        |
 | -------------------- | ---------------------------------------------------------------------------- |
 | Twig template engine | [Github project repository](https://github.com/znegva/gurzr)                 |
@@ -86,6 +88,9 @@ A single column theme for [Bolt CMS](//bolt.cm), with support for image gallerie
 
 Port of Hyde theme for [Bolt CMS](//bolt.cm).  
 Hyde is a brazen two-column theme that pairs a prominent sidebar with uncomplicated content. It's based on Poole, the Jekyll butler. Both created by Mark Otto.
+
+From time to time I publish pictures of excursions on my private website, sometimes including hiking routes. I couldn't find a theme that fulfilled all my requirements (technical as well as optical).
+First I wanted to implement my technical requirements for a theme (especially galleries and GPX presentation), so I chose an existing and appealing theme and adapted it to my needs.
 
 | Tools                | Links                                                                       |
 | -------------------- | --------------------------------------------------------------------------- |
