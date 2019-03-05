@@ -3,6 +3,6 @@ items:
 
 footeritems:
 - title: 'projects'
-  url: /overview.html
+  url: /overview/
 - title: 'about'
-  url: /about.html
+  url: /about/
