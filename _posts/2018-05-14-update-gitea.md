@@ -2,6 +2,7 @@
 layout: post
 title: Update gitea on  uberspace
 tags: git uberspace
+update: 2019-06-16
 ---
 
 Just the necessary step for updating gitea on uberspace 6.
@@ -15,6 +16,9 @@ Setup-guides (in german) can be found [here](https://blog.manuelhu.de/post/gogs-
    ```bash
    ~/bin/gitea % wget "https://dl.gitea.io/gitea/1.4.1/gitea-1.4.1-linux-amd64"
    ```
+
+   Test the binary by calling `% ./gitea-1.4.1-linux-amd64 --version`  
+   Maybe you will get something like `FATAL: kernel too old`, then you may join [this issue](https://github.com/go-gitea/gitea/issues/4131). 
 3. stop the service
    ```bash
    ~/bin/gitea % svc -d ~/service/gitea
