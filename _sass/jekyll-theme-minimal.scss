@@ -4,12 +4,16 @@
  */
 @import "rouge-github";
 
+$background-color: #727272;
+$znegva-blue: #267CB9;
+$border-color: #e5e5e5;
+
 body {
   background-color: #fff;
   padding:20px;
   font: 1rem "Open Sans","Liberation Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing:subpixel-antialiased;
-  color:#727272;
+  color: $background-color;
   font-weight:400;
 }
 
@@ -27,7 +31,7 @@ h1, h2, h3 {
 }
 
 a {
-  color:#267CB9;
+  color: $znegva-blue;
   text-decoration:none;
 }
 
@@ -152,8 +156,8 @@ footer{
           float: unset;
           width: 100%;
           margin: 1rem 0;
-          border-top: 1px solid #e5e5e5;
-          border-bottom: 1px solid #e5e5e5;
+          border-top: 1px solid $border-color;
+          border-bottom: 1px solid $border-color;
           padding: 0.5rem 0;
       }
   }
@@ -173,7 +177,7 @@ footer{
   }
 
   footer{
-      border-top: 1px solid #e5e5e5;
+      border-top: 1px solid $border-color;
       text-align: left;
   }
 }
@@ -201,7 +205,7 @@ footer{
  * COMMON ELEMENTS
  */
 blockquote {
-  border-left:1px solid #e5e5e5;
+  border-left:1px solid $border-color;
   margin:0;
   padding:0 0 0 20px;
   font-style:italic;
@@ -217,7 +221,7 @@ pre {
   padding:8px 15px;
   background: #f8f8f8;
   border-radius:5px;
-  border:1px solid #e5e5e5;
+  border:1px solid $border-color;
   overflow-x: auto;
 }
 
@@ -229,7 +233,7 @@ table {
 th, td {
   text-align:left;
   padding:5px 10px;
-  border-bottom:1px solid #e5e5e5;
+  border-bottom:1px solid $border-color;
 }
 
 dt {
@@ -253,7 +257,7 @@ small {
 }
 hr {
   border:0;
-  background:#e5e5e5;
+  background:$border-color;
   height:1px;
   margin:0 0 20px;
 }
