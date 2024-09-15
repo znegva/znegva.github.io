@@ -7,11 +7,6 @@ layout: default
 __What's a znegva?__  
 [I don't know](http://www.rot13.com/).
 
-
-__Where is the _Impressum_?__  
-[Here](https://martinkausche.de/seite/about)!
-
-
 __What about privacy / Datenschutz?__  
 I do not collect any data of the visitors nor
 is it necessary to provide any data for being able to view the page.  
